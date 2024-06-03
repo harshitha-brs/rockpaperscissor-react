@@ -1,0 +1,481 @@
+/*
+Author:    Build Rise Shine with Nyros (BRS)
+Created:   11.05.2022
+Library / Component: Styling page for the app
+(c) Copyright by BRS with Nyros.
+*/
+
+:root {
+  --primary-color: #1a4b84;
+  --chathams_blue: #31cfff;
+  --tamarillo: #f11fd5;
+  --yellow_sea: #fefa06;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+}
+
+.btn,
+.btn:hover {
+  color: #fff;
+
+  cursor: pointer;
+  border-radius: 5px;
+
+  padding: 5px 12px;
+}
+
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currency select {
+  padding: 10px 20px 10px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #dedede;
+  font-size: 16px;
+  background: transparent;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-position: right 10px top 50%, 0, 0;
+  background-size: 12px auto, 100%;
+  background-repeat: no-repeat;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+
+.swap-rate-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate {
+  color: var(--primary-color);
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 0;
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
+
+/* NAVBAR STYLING STARTS */
+
+.nav-links a {
+  color: #fff;
+}
+
+/* Header Styles
+  -------------------------------------------------- */
+
+header .bg-gradient {
+  background: rgb(216, 216, 216);
+}
+
+body {
+  background: url("../BG.png");
+  background-size: cover;
+}
+
+header .navbar {
+  padding: 20px 0 0;
+}
+
+header .navbar-brand {
+  padding: 0;
+  z-index: 1;
+  width: 213px;
+  height: 109px;
+  background-color: var(--primary-color);
+}
+
+header .navbar-brand img {
+  width: 90px;
+}
+
+
+header h3 {
+  font: normal normal 600 18px/27px Oswald;
+  color: #fff;
+}
+
+header h4 {
+  font: normal normal 600 18px/28px Oswald;
+  letter-spacing: 0.36px;
+  color: #191919;
+  text-transform: uppercase;
+}
+
+header p {
+  font: 600 12px/15px Poppins;
+  letter-spacing: 0.24px;
+  color: #191919;
+}
+
+.ReactTitle {
+  background-color: #000000;
+  height: 50px;
+  font: normal normal 600 19px/27px Oswald;
+  letter-spacing: 0.38px;
+  color: #0c0b0b;
+  text-transform: uppercase;
+}
+
+.ReactTitle img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.link {
+  background-color: rgba(0, 0, 0, 0.09);
+  font: normal normal medium 12px/15px Poppins;
+  letter-spacing: 0.24px;
+  height: 40px;
+  padding: 10px 10px;
+}
+
+.link a {
+  color: #055ba6;
+}
+
+/* Sticky footer styles
+  -------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+  -------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.footer-dark {
+  background-color: var(--primary-color);
+  color: rgb(255, 246, 246);
+  padding-left: 20px;
+}
+
+.toggle-currency {
+  font-size: 20px;
+}
+
+footer {
+  font: normal normal 600 12px/19px Oswald;
+  letter-spacing: 0.24px;
+  color: #0e0d0d;
+}
+
+.theme-switch {
+  margin: 0 5px;
+  padding: 10px;
+  font-size: 0.5rem;
+  border: 1px solid #080808;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+  --primary-color: #003699;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --lose-color: #dc3545;
+  --win-color: #28a745;
+  --modal-duration: 1s;
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  
+  color: #333;
+}
+
+.form-group{
+  display: flex;
+  justify-content: center;
+}
+
+.form-item {
+  margin: 20px;
+}
+
+
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-btn,
+.restart-btn {
+  border: 2px solid black;
+  background-color: #ffc107;
+  padding: 6px;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+  text-align: center;
+  height: 80vh;
+  
+}
+
+.header {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.header h2 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-family: monospace;
+}
+
+.score {
+  font-size: 1.2rem;
+  font-family: monospace;
+  color: black;
+}
+
+.score p {
+  font-size: 20px;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.choice {
+  cursor: pointer;
+}
+
+.choice:hover {
+  color: var(--primary-color);
+}
+
+.game-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.scoreBoardL {
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.modal-content img {
+  margin: 0 auto;
+}
+
+.game-img {
+  width: 150px;
+
+  margin-bottom: 20px;
+}
+
+.text-win {
+  color: var(--win-color);
+}
+
+.text-lose {
+  color: var(--lose-color);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  text-align: center;
+  margin: 10% auto;
+  width: 350px;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: var(--modal-duration);
+}
+
+.modal-content h1 {
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .choice {
+    font-size: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  .choice {
+    font-size: 80px;
+  }
+}
+
+header .navbar-brand {
+  height: 150px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.start-game {
+  text-align: center;
+}
+
+.game {
+  text-align: center;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.choices img {
+  width: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.choices img:hover {
+  transform: scale(1.1);
+}
+
+.choices img.selected {
+  border: 2px solid blue;
+}
+
+.result {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.form-control{
+  width: 50%;
+  height: 20px;
+}
+h1{
+  background-color: #1A4B84;
+  text-align: center;
+  color: #fff;
+}
